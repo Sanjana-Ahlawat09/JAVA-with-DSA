@@ -14,10 +14,13 @@ public class twoDarray {
                 numbers[i][j]=sc.nextInt();
             }
         }
+        int x= sc.nextInt();
         //output
         for(int i=0;i<rows;i++){
             for(int j=0;j<cols;j++){
-                System.out.print(numbers[i][j]);
+                if(numbers[i][j]==x){
+                   System.out.print(i+" "+j);
+                }
             }
             System.out.println();
         }
